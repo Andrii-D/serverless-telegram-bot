@@ -1,0 +1,20 @@
+service: serverless-telegram-bot
+
+provider:
+  name: aws
+  runtime: python3.6
+  stage: dev
+  region: us-east-1
+  environment:
+    TELEGRAM_TOKEN: ${env:TELEGRAM_TOKEN}
+
+
+
+functions:
+  post:
+    handler: handler.hello
+    events:
+      - http:
+          path: my-custom-url
+          method: post
+          cors: true
