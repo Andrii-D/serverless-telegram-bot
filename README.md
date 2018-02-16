@@ -30,3 +30,6 @@ Install pip requirements:
 Deploy to AWS:
 
 `serverless deploy`
+
+### P.S. 
+If you need more complex solution, take a look on this example: https://github.com/Andrii-D/telegram-stepfunctions-bot/
